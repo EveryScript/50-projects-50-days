@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+
+    place-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    width: 60vh;
+    padding: 1rem;
+}
+
+.circle {
+    background-color: white;
+    border-radius: 999rem;
+    border: .2rem solid #c7c7c7;
+    color: #9ca1a6;
+    padding: .3rem .6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 200ms ease-in-out;
+}
+
+.circle-active {
+    border: .2rem solid #3498db;
+}
+
+.btn {
+    display: inline-block;
+    padding: .5rem 2rem;
+    color: white;
+    border-radius: .5rem;
+    margin: 1rem .5rem;
+    background-color: #3498db;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Progress div */
+.progress {
+    position: absolute;
+    top: 49%;
+    left: 7%;
+    width: 0%;
+    height: 5px;
+    z-index: -1;
+    background-color: #3498db;
+    transition: width 200ms ease-in-out;
+}
